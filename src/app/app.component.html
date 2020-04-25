@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+    <title>Ac prices</title>
+</head>
+<body>
+    <div class="container-fluid app-bg">
+        <app-header (typeSelected)="onNavigate($event)"></app-header>
+            <div class="row content">
+                <div class="col-lg-9 col-10 typeCont">
+                    <app-insetti *ngIf="loadedType === 'insetti'"></app-insetti>
+                    <app-pesci *ngIf="loadedType !=='insetti'"></app-pesci>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+</html>

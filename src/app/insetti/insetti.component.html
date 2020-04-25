@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-12 col-lg-12">
+        <input type="text" placeholder="Search..." class="search-bar" [(ngModel)]="name">
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-lg-3 critterCont" *ngFor="let insetto of insetti | filter:name">
+        <img [src]='insetto.image' alt="{{ insetto.name }}" class='img-responsive' style='max-height: 100px;'>
+        <p>NAME: {{ insetto.name }}</p>
+        <p>LOCATION: {{ insetto.location}}</p>
+        <p>PRICE: {{ insetto.price }} Bells</p>
+    </div>
+</div>

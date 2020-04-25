@@ -1,0 +1,33 @@
+p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+p:first-of-type{
+    text-decoration: underline;
+}
+
+.critterCont{
+    background: rgba(255, 255, 255, .6);
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.search-bar{
+    width: 400px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.search-bar:focus{
+  box-shadow: 3px 4px 4px 4px rgba(0, 0, 0, 0.65);  
+}
+
+@media screen and (max-width: 400px) {
+    .search-bar {
+        width: 250px;
+        margin: 20px auto;
+    }
+}

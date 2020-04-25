@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    letter-spacing: 5px;
+}
+
+h1 span:nth-of-type(even){
+    color: darkred;
+}
+
+h1 span:nth-of-type(odd){
+    color: black;
+}
+
+.typeChoice{
+    height: 50px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.typeChoice button{
+    width: 200px;
+    max-height: 50px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 3px 4px 4px 4px rgba(0,0,0,0.65);
+    margin: 0 100px;
+}
+
+.typeChoice button:first-of-type:focus{
+    box-shadow: 3px 4px 4px 4px rgba(37, 100, 8, 0.925);
+}
+
+.typeChoice button:last-of-type:focus{
+    box-shadow: 3px 4px 4px 4px rgba(9, 29, 143, 0.76);
+}
+
+@media screen and (max-width: 400px) {
+
+    h1 {
+        padding-bottom: 15px;
+    }
+
+    .typeChoice{
+        margin-bottom: 45px;
+    }
+
+    .typeChoice button{
+        margin: 5px auto;    
+    }
+}
